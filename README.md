@@ -6,6 +6,15 @@ Built and verified on this exact model.
 
 ---
 
+## Showcase
+
+![macOS 15.8.1 Sequoia on the G614JI — About This Mac](images/about-macos-sequoia.jpg)
+
+macOS **15.8.1 Sequoia** running on the G614JI — i7-13650HX, RTX 4070 Laptop GPU (8 GB),
+32 GB DDR5, 16" 1920×1200 display, installed on the `HACKINTOSH` volume.
+
+---
+
 ## Status
 
 | Feature | Status |
