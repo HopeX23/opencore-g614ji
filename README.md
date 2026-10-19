@@ -29,8 +29,8 @@ macOS **15.8.1 Sequoia** running on the G614JI — i7-13650HX, RTX 4070 Laptop G
 | Audio — headphones (3.5 mm) / USB / Bluetooth | ✅ working (`alcid=24`) |
 | NVIDIA RTX 4070 (NullMoth driver) | ✅ working |
 | HDMI external monitor | ✅ working — connect the monitor **before** power-on |
-| Brightness keys | ⚠️ untested — verify in daily use |
-| Bluetooth | ⚠️ loads — verify in daily use |
+| Brightness keys | ✅ working |
+| Bluetooth (Intel AX211) | ✅ working |
 | Sleep / wake | ⚠️ untested — verify in daily use |
 | iMessage / iCloud | ⚠️ needs your own serials |
 | **Internal speakers** | ❌ silent — CS35L41 amps over SPI, no macOS driver |
