@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# macOS recovery image (844 MB) — regenerate with tools/macrecovery.py (see README)
+recovery/
