@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackintosh on the ASUS ROG Strix G16 (G614JI) — OpenCore EFI</title>
+<meta name="description" content="Working OpenCore EFI for a hackintosh on the ASUS ROG Strix G16 G614JI (i7-13650HX, RTX 4070). macOS 15 Sequoia with Wi-Fi, Bluetooth, touchpad, brightness, battery, USB and RTX 4070 Metal. Status list and download.">
+<link rel="canonical" href="https://hopex23.github.io/opencore-g614ji/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hackintosh on the ASUS ROG Strix G16 (G614JI) — OpenCore EFI">
+<meta property="og:description" content="OpenCore 1.0.9 EFI for macOS 15 Sequoia on the ASUS ROG Strix G16 G614JI. Wi-Fi, Bluetooth, touchpad, brightness, battery and RTX 4070 Metal working.">
+<meta property="og:url" content="https://hopex23.github.io/opencore-g614ji/">
+<meta property="og:image" content="https://hopex23.github.io/opencore-g614ji/screenshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0e0f12; color: #e7e9ee;
+         font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.2; margin: 0 0 16px; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; color: #fff; }
+  p.lead { font-size: 1.05rem; color: #b9bfcc; margin: 0 0 28px; }
+  img.shot { width: 100%; height: auto; border-radius: 12px; border: 1px solid #23262e; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  td { padding: 9px 10px; border-bottom: 1px solid #1d2027; vertical-align: top; }
+  td:last-child { white-space: nowrap; text-align: right; color: #cfd4de; }
+  .ok::before { content: "✅ "; }
+  .no::before { content: "❌ "; }
+  .warn::before { content: "⚠️ "; }
+  a { color: #7fb2ff; }
+  .cta { display: inline-block; margin: 26px 0 0; padding: 12px 20px; border-radius: 10px;
+         background: #2f6df6; color: #fff; text-decoration: none; font-weight: 600; }
+  .cta:hover { background: #3d79ff; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #1d2027;
+           font-size: .88rem; color: #8d94a3; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hackintosh on the ASUS ROG Strix G16 (G614JI)</h1>
+  <p class="lead">
+    A working <strong>OpenCore 1.0.9</strong> EFI for running <strong>macOS 15 Sequoia</strong>
+    on the 2023 <strong>ASUS ROG Strix G16 G614JI</strong> — i7-13650HX, RTX 4070 Laptop GPU,
+    32 GB DDR5, 16″ 1920×1200 165 Hz. Built and verified on the actual machine, not a template.
+  </p>
+
+  <img class="shot" src="screenshot.jpg"
+       alt="macOS 15.8.1 Sequoia running on an ASUS ROG Strix G16 G614JI — About This Mac">
+
+  <h2>What works</h2>
+  <table>
+    <tr><td>Boot &amp; install macOS 15</td><td class="ok">working</td></tr>
+    <tr><td>Wi-Fi — Intel AX211</td><td class="ok">working</td></tr>
+    <tr><td>Bluetooth — Intel AX211</td><td class="ok">working</td></tr>
+    <tr><td>Touchpad — ASUE120D</td><td class="ok">working</td></tr>
+    <tr><td>Keyboard &amp; brightness keys</td><td class="ok">working</td></tr>
+    <tr><td>Battery indicator</td><td class="ok">working</td></tr>
+    <tr><td>USB &amp; Ethernet (RTL8111)</td><td class="ok">working</td></tr>
+    <tr><td>NVIDIA RTX 4070 — Metal (NullMoth)</td><td class="ok">working</td></tr>
+    <tr><td>HDMI external display</td><td class="ok">working*</td></tr>
+    <tr><td>Headphones / USB-C audio</td><td class="ok">working (alcid=24)</td></tr>
+    <tr><td>Sleep / wake</td><td class="warn">untested daily use</td></tr>
+    <tr><td>Internal speakers — CS35L41 over SPI</td><td class="no">silent</td></tr>
+    <tr><td>Fan control</td><td class="no">firmware curve</td></tr>
+  </table>
+  <p style="font-size:.85rem;color:#8d94a3">* connect the monitor before power-on.</p>
+
+  <h2>Get the EFI</h2>
+  <p>SMBIOS values are placeholders — generate your own with GenSMBIOS (model <code>iMacPro1,1</code>).</p>
+  <a class="cta" href="https://github.com/HopeX23/opencore-g614ji">Download on GitHub →</a>
+
+  <footer>
+    Community EFI, provided as-is. Not affiliated with ASUS, Apple or the OpenCore team.
+    Built on Acidanthera OpenCore/Lilu/VirtualSMC/WhateverGreen/AppleALC, NullMoth,
+    VoodooI2C, OpenIntelWireless and USBToolBox.
+  </footer>
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "OpenCore EFI for ASUS ROG Strix G16 G614JI",
+  "description": "OpenCore 1.0.9 EFI for macOS 15 Sequoia on the ASUS ROG Strix G16 G614JI. Wi-Fi, Bluetooth, touchpad, brightness keys, battery and RTX 4070 Metal working.",
+  "codeRepository": "https://github.com/HopeX23/opencore-g614ji",
+  "programmingLanguage": "ASL",
+  "operatingSystem": "macOS 15 Sequoia",
+  "keywords": "hackintosh, ASUS ROG Strix G16, G614JI, OpenCore, macOS Sequoia, EFI"
+}
+</script>
+</body>
+</html>

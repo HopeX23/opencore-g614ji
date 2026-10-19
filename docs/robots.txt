@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hopex23.github.io/opencore-g614ji/sitemap.xml

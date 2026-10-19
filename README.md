@@ -1,8 +1,9 @@
-# ASUS ROG Strix G16 **G614JI** — OpenCore EFI for macOS 15 Sequoia
+# Hackintosh on the ASUS ROG Strix G16 (G614JI) — OpenCore EFI for macOS 15 Sequoia
 
 OpenCore **1.0.9** EFI for running **macOS 15 Sequoia** on the
 **ASUS ROG Strix G16 G614JI** (i7-13650HX · RTX 4070 · 16" 1920×1200 @165 Hz).
-Built and verified on this exact model.
+Built and verified on this exact model — Wi-Fi, Bluetooth, touchpad, brightness keys,
+battery, USB and RTX 4070 Metal all work out of the box.
 
 ---
 
